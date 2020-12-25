@@ -6,6 +6,19 @@
     <title>Program 1</title>
   </head>
   <body>
+    <form>
+      <input
+        type="number"
+        placeholder="Temperature in celsis"
+        id="number"
+        required
+      />
+      <input
+        type="button"
+        value="convert"
+        onclick="CtoF(document.getElementById('number').value)"
+      />
+    </form>
     <script>
       function CtoF(c) {
         console.log((9 / 5) * c + 32);
