@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program 3</title>
+  </head>
+  <body>
+    <input
+    type="number"
+    placeholder="Subject 1 marks"
+    id="number"
+    required
+  />
+  <input
+  type="number"
+  placeholder="Subject 2 marks"
+  id="number2"
+  required
+/>
+<input
+type="number"
+placeholder="Subject 3 Marks"
+id="number3"
+required
+/>
+  <input
+    type="button"
+    value="Average"
+    onclick="Average(document.getElementById('number').value,document.getElementById('number2').value
+    ,document.getElementById('number3').value)"
+  />
+</form>
+    <script>
+      function Average(s1, s2, s3) {
+        console.log("Subject 1 marks = " + s1);
+        console.log("Subject 2 marks = " + s2);
+        console.log("Subject 1 marks = " + s3);
+        let average = (s1 + s2 + s3) / 3;
+        console.log("Average marks = " + average);
+        if (average > 80) {
+          console.log("you are above standard, Admission Granted!");
+        } else {
+          console.log("you are not above standard, Admission not Granted!");
+        }
+      }
+     
+    </script>
+  </body>
+</html>
